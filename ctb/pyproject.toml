@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctb"
+version = "0.3.0"
+description = "化学工具箱核心库：化学方程式配平 + 相对原子/分子质量计算 + 帮助系统"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [{name = "123IOPjklbnm"}]
+keywords = ["chemistry", "balancer", "equation", "mass", "ctb"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.20",
+]
+
+[project.urls]
+Homepage = "https://github.com/123IOPjklbnm/Chemistry-Toolbox"
+Repository = "https://github.com/123IOPjklbnm/Chemistry-Toolbox"
+Issues = "https://github.com/123IOPjklbnm/Chemistry-Toolbox/issues"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
