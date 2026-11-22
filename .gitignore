@@ -1,6 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
 
 # C extensions
@@ -221,3 +221,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# 自己项目：打包产物，exe/压缩包不上传Git，只放在GitHub Releases
+*.exe
+*.zip
+*.7z
+*.rar
+
+# 本地临时备份文件
+*.bak
+*.tmp
